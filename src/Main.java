@@ -50,13 +50,12 @@ public class Main {
         }
         if (kid > 5 || kid < 14) {
             System.out.println(" Если ребенку больше 5 , но меньше 14 лет , то он может кататься только в сопровождении взрослого . Если взрослого нету то кататься нельзя .");
-        } else {
-            System.out.println(" Если ребенку  меньше 5 лет , то кататься нельзя .");
         }
+
         if (kid > 14) {
-            System.out.println(" Если ребенку меньше 14 лет , то можно кататься только в сопровождении взрослого .");
+            System.out.println(" Если ребенок младше 14 лет , то он может кататься с сопровождением взрослого .");
         } else {
-            System.out.println(" Если ребенок старше 14 лет , то он может кататься без сопровождения взрослого .");
+            System.out.println(" Если ребенок старше 14 лет , то он может кататься без сопровождения взрослых .");
         }
 
         int totalNumberOfSeats = 102;
@@ -68,10 +67,13 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        if (three > two && three > one) {
-            System.out.println(" Число Three самое большое .");
+        if (one > two && one > three) {
+        } else if (two > one && two > three) {
+            System.out.println(" two ,большее число");
         } else {
-            System.out.println(" Число One и Two менньше. ");
+            System.out.println(" Three большее число");
+
+
         }
 
     }
